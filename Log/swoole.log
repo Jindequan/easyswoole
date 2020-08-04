@@ -1,0 +1,8 @@
+[2020-07-06 10:16:09 *17939.4]	ERROR	php_swoole_server_rshutdown (ERRNO 503): Fatal error: Uncaught EasySwoole\ORM\Exception\Exception: SQLSTATE[28000] [1045] Access denied for user 'testEs'@'210.22.161.114' (using password: YES) in /devin/easyswoole/vendor/easyswoole/orm/src/Db/MysqlPool.php:22
+Stack trace:
+#0 /devin/easyswoole/vendor/easyswoole/pool/src/AbstractPool.php(295): EasySwoole\ORM\Db\MysqlPool->createObject()
+#1 /devin/easyswoole/vendor/easyswoole/pool/src/AbstractPool.php(253): EasySwoole\Pool\AbstractPool->initObject()
+#2 /devin/easyswoole/vendor/easyswoole/pool/src/AbstractPool.php(227): EasySwoole\Pool\AbstractPool->keepMin(5)
+#3 {main}
+  thrown in /devin/easyswoole/vendor/easyswoole/orm/src/Db/MysqlPool.php on line 22
+[2020-07-06 10:16:09 $17932.0]	WARNING	swManager_check_exit_status: worker#4[pid=17939] abnormal exit, status=255, signal=0
